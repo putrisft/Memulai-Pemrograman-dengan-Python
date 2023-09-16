@@ -31,7 +31,7 @@ class Animal:
 
 class Cat(Animal):
     def deskripsi(self):
-        print("{nama} adalah kucing berjenis {spesies} yang sudah berumur {umur} tahun".format(nama = self.name, spesies=self.species, umur=self.age))
+        print(f"{self.name} adalah kucing berjenis {self.species} yang sudah berumur {self.age} tahun")
 
     def suara(self):
        print("meow!")
@@ -39,3 +39,4 @@ class Cat(Animal):
 myCat = Cat("Neko",3,"Persian")
 
 myCat.deskripsi()
+myCat.suara()
