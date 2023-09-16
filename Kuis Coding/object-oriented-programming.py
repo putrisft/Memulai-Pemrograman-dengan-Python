@@ -31,12 +31,9 @@ class Animal:
 
 class Cat(Animal):
     def deskripsi(self):
-        print(f"{self.name} adalah kucing berjenis {self.species} yang sudah berumur {self.age} tahun")
+        return f"{self.name} adalah kucing berjenis {self.species} yang sudah berumur {self.age} tahun"
 
     def suara(self):
-       print("meow!")
+       return "meow!"
 
 myCat = Cat("Neko",3,"Persian")
-
-myCat.deskripsi()
-myCat.suara()
